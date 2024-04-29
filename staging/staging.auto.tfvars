@@ -1,0 +1,7 @@
+env                              = "staging"
+project_id                       = "dataform-staging"
+region                           = "europe-west2"
+project_number                   = "project-number"
+dataform_nonprod_service_account = "dataform-staging"
+dataform_prod_service_account    = "dataform-prod@{prod-project-id}.iam.gserviceaccount.com"
+dataform_github_token            = "dataform_github_token"
