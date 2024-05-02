@@ -10,9 +10,9 @@ resource "google_project_iam_member" "dataform_staging_roles" {
   role    = each.value
   member  = "serviceAccount:${google_service_account.dataform_staging.email}"
 
-  depends_on = [ 
+  depends_on = [
     google_service_account.dataform_staging
-   ]
+  ]
 }
 
 resource "google_project_iam_member" "default_dataform_sa_staging_role" {

@@ -25,9 +25,9 @@ variable "location" {
   default     = "EU"
 }
 
-variable "dataform_nonprod_service_account" {
+variable "dataform_staging_service_account" {
   type        = string
-  description = "Email of the service account Dataform uses to execute queries in nonprod"
+  description = "Email of the service account Dataform uses to execute queries in staging env"
 }
 
 variable "dataform_prod_service_account" {
