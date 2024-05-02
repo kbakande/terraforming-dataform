@@ -3,11 +3,6 @@ variable "project_id" {
   description = "Name of the GCP Project."
 }
 
-variable "env" {
-  type        = string
-  description = "Environment Tag (nonprod/prod)."
-}
-
 variable "region" {
   type        = string
   description = "The google cloud region to use"
