@@ -3,10 +3,10 @@ resource "google_dataform_repository" "dataform_demo" {
   name            = "dataform_demo"
   project         = var.project_id
   region          = var.region
-  service_account = var.dataform_staging_service_account
-
+  service_account = "${var.dataform_staging_service_account}@${var.project_id}.iam.gserviceaccount.com"
+  
   git_remote_settings {
-    url                                 = "https://github.com/kbakande/dataform-001"
+    url                                 = "https://github.com/kbakande/terraforming-dataform"
     default_branch                      = "main"
     authentication_token_secret_version = data.google_secret_manager_secret_version.dataform_github_token.id
   }
